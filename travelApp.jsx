@@ -4,15 +4,11 @@ import data from "./data"
 
 
 export default function App() {
-  const dataEelement = data.map((data) => {
+  const dataEelement = data.map((entry) => {
     return (
       <Entry 
-        img={data.img}
-        title={data.title}
-        country={data.country}
-        googleMapsLink={data.googleMapsLink}
-        dates={data.dates}
-        text={data.text}
+        key={entry.id}
+        {...entry}
       />
     )
   })

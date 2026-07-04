@@ -8,7 +8,7 @@ export default function Entry(props) {
                 <img 
                     className="main-image"
                     src={props.img.src}
-                    alt={props.alt}
+                    alt={props.img.alt}
                 />
             </div>
             <div className="info-container">
@@ -18,7 +18,7 @@ export default function Entry(props) {
                     alt="map marker icon"
                 />
                 <span className="country">{props.country}</span>
-                <a href={props.link} target="_blank" rel="noopener noreferrer">View on Google Maps</a>
+                <a href={props.googleMapsLink} target="_blank" rel="noopener noreferrer">View on Google Maps</a>
                 <h2 className="entry-title">{props.title}</h2>
                 <p className="trip-dates">{props.dates}</p>
                 <p className="entry-text">{props.text}</p>
